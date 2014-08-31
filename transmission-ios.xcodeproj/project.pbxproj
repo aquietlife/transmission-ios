@@ -19,6 +19,8 @@
 		8E05E4F619AD233A00CFE7CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DE19AD233A00CFE7CA /* UIKit.framework */; };
 		8E05E4FE19AD233A00CFE7CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E05E4FC19AD233A00CFE7CA /* InfoPlist.strings */; };
 		8E05E50019AD233A00CFE7CA /* transmission_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */; };
+		8E05E50B19AD28D300CFE7CA /* TransmissionMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */; };
+		8E05E50D19AD2DE300CFE7CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		8E05E4FB19AD233A00CFE7CA /* transmission-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transmission-iosTests-Info.plist"; sourceTree = "<group>"; };
 		8E05E4FD19AD233A00CFE7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transmission_iosTests.m; sourceTree = "<group>"; };
+		8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransmissionMainViewController.h; path = ../TransmissionMainViewController.h; sourceTree = "<group>"; };
+		8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransmissionMainViewController.m; path = ../TransmissionMainViewController.m; sourceTree = "<group>"; };
+		8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E05E50D19AD2DE300CFE7CA /* AudioToolbox.framework in Frameworks */,
 				8E05E4DD19AD233A00CFE7CA /* CoreGraphics.framework in Frameworks */,
 				8E05E4DF19AD233A00CFE7CA /* UIKit.framework in Frameworks */,
 				8E05E4DB19AD233A00CFE7CA /* Foundation.framework in Frameworks */,
@@ -96,6 +102,7 @@
 		8E05E4D919AD233A00CFE7CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */,
 				8E05E4DA19AD233A00CFE7CA /* Foundation.framework */,
 				8E05E4DC19AD233A00CFE7CA /* CoreGraphics.framework */,
 				8E05E4DE19AD233A00CFE7CA /* UIKit.framework */,
@@ -107,6 +114,8 @@
 		8E05E4E019AD233A00CFE7CA /* transmission-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */,
+				8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */,
 				8E05E4E919AD233A00CFE7CA /* AppDelegate.h */,
 				8E05E4EA19AD233A00CFE7CA /* AppDelegate.m */,
 				8E05E4EC19AD233A00CFE7CA /* Images.xcassets */,
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E05E50B19AD28D300CFE7CA /* TransmissionMainViewController.m in Sources */,
 				8E05E4EB19AD233A00CFE7CA /* AppDelegate.m in Sources */,
 				8E05E4E719AD233A00CFE7CA /* main.m in Sources */,
 			);
