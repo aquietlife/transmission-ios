@@ -378,7 +378,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     CGFloat about_button_width = 150.0;
     _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
                                                               self.view.frame.size.width/2 - about_button_width/2,
-                                                              40,
+                                                              30,
                                                               about_button_width,
                                                               20)];
     [_aboutButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
@@ -787,6 +787,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a3Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
+    
+    [self setStrobeFrequency];
 
     
 }
@@ -800,6 +802,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)a3ButtonPressed:(id)sender{
@@ -811,6 +815,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)a4ButtonPressed:(id)sender{
@@ -822,6 +828,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a4Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)a5ButtonPressed:(id)sender{
@@ -833,6 +841,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 // e octave buttons
@@ -845,6 +855,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)e2ButtonPressed:(id)sender{
@@ -856,6 +868,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)e3ButtonPressed:(id)sender{
@@ -866,7 +880,9 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e3Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
-    
+ 
+    [self setStrobeFrequency];
+
 }
 
 -(void)e4ButtonPressed:(id)sender{
@@ -878,6 +894,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e4Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 -(void)e5ButtonPressed:(id)sender{
@@ -889,6 +907,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
+    [self setStrobeFrequency];
+
 }
 
 //sliders
@@ -1012,7 +1032,16 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 -(void)setupTorch{
     _torch = [[LARSTorch alloc] initWithTorchState:LARSTorchStateOff];
     _strobe = [[LARSStrobe alloc] initWithLARSTorch:_torch];
-    [_strobe setStrobePeriodWithPeriod:0.0025];
+    [_strobe setStrobePeriodWithPeriod:0.005];
+    //[_strobe setStrobePeriodWithFrequency:4.0];
+}
+
+-(void) setStrobeFrequency{
+    /*
+    CGFloat new_frequency = (aFrequency + eFrequency)/2;
+    [_strobe setStrobePeriodWithFrequency:new_frequency/10];
+    NSLog(@"setting strobe frequency: %f", new_frequency/100);
+     */
 }
 
 #pragma mark - EZAudio

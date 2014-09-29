@@ -63,6 +63,7 @@
 		8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransmissionMainViewController.h; path = ../TransmissionMainViewController.h; sourceTree = "<group>"; };
 		8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransmissionMainViewController.m; path = ../TransmissionMainViewController.m; sourceTree = "<group>"; };
 		8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8E1E62E719DA0AE2009FF1BF /* transmission-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "transmission-ios.entitlements"; sourceTree = "<group>"; };
 		8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LARSMorse-Strobe.podspec"; sourceTree = "<group>"; };
 		8E69EDD019D21D6400B81D3D /* LARSMorse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSMorse.h; sourceTree = "<group>"; };
 		8E69EDD119D21D6400B81D3D /* LARSMorse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSMorse.m; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		8E05E4E019AD233A00CFE7CA /* transmission-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8E1E62E719DA0AE2009FF1BF /* transmission-ios.entitlements */,
 				8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */,
 				8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */,
 				8EAA0F8219D9BBC600623E00 /* TMAboutViewController.h */,
@@ -250,6 +252,17 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Johann Diedrick";
 				TargetAttributes = {
+					8E05E4D619AD233A00CFE7CA = {
+						DevelopmentTeam = A9QGCEL6ZB;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
 					8E05E4F119AD233A00CFE7CA = {
 						TestTargetID = 8E05E4D619AD233A00CFE7CA;
 					};
@@ -461,7 +474,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
@@ -477,7 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
