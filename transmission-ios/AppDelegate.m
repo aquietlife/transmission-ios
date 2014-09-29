@@ -14,9 +14,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    //self.window.backgroundColor = [UIColor whiteColor];
+
     _tmvc = [[TransmissionMainViewController alloc] init];
-    self.window.rootViewController = _tmvc;
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:_tmvc];
+    //self.window.rootViewController = navigationController;
+    //[self.window makeKeyAndVisible];
+    [_navigationController setNavigationBarHidden:YES];
+    [self.window addSubview:_navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

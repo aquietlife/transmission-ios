@@ -21,11 +21,13 @@
 
 #ifndef DLog
 #if DEBUG
-#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DLog(fmt, ...) 
 #else
 #define DLog(fmt, ...) /* */
 #endif
 #endif
+
+
 
 
 @implementation LARSMorse

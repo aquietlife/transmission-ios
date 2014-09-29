@@ -12,6 +12,7 @@
 #import <LARSTorch.h>
 #import "LARSStrobe.h"
 #import <EZAudio.h>
+#import "TMAboutViewController.h"
 
 @interface TransmissionMainViewController : UIViewController
 {
@@ -49,6 +50,11 @@
 - (void)stop;
 
 //ui
+
+//about
+@property (strong, nonatomic) UIButton *aboutButton;
+
+//a-e buttons
 @property (strong, nonatomic) UIButton* aButton;
 @property (strong, nonatomic) UIButton* eButton;
 
@@ -94,5 +100,7 @@
 ////oscillators!
 //@property (strong, nonatomic) TMOscillator* aOscillator;
 //@property (strong, nonatomic) TMOscillator* eOscillator;
+
+@property (strong, nonatomic) TMAboutViewController* tmavc;
 
 @end

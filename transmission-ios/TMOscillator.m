@@ -40,7 +40,7 @@
     */
     if (type == sineWave){
      
-        return sin(newPhase) * volume;
+        return sin(newPhase) * volume * 1.5;
     
     } else if (type == squareWave){
      
@@ -48,8 +48,11 @@
     
     } else if (type == triangleWave){
         
-        float pct = newPhase / M_2_PI;
-        return (pct < 0.5 ? [self map:pct inputMin:0.0 inputMax:0.5 outputMin:-1 outputMax:1] : [self map:pct inputMin:0.5 inputMax:1.0 outputMin:1.0 outputMax:-1.0]) * volume;
+        //this seemed to work in of but not so much in obj-c...
+        //float pct = newPhase / M_2_PI;
+        //return (pct < 0.0 ? [self map:pct inputMin:0.0 inputMax:0.5 outputMin:-1.0 outputMax:1.0] : [self map:pct inputMin:0.5 inputMax:1.0 outputMin:1.0 outputMax:-1.0]) * volume;
+        
+        return ( (8 / pow(M_PI,2)) * (sin(newPhase) - sin(3*newPhase)/9 + sin(5*newPhase)/25) ) * volume;
         
     } else if (type==sawWave){
         
@@ -70,13 +73,13 @@
     
 }
 
--(float)map:(float)value inputMin:(float)inputMin inputMax:(float)inputMax outputMin:(float)outputMin outputMax:(float)outputMax{
+-(double)map:(double)value inputMin:(double)inputMin inputMax:(double)inputMax outputMin:(double)outputMin outputMax:(double)outputMax{
     //implementation borrowed from openframeworks. thx for being open source! ;)
     if (fabs(inputMin - inputMax) < FLT_EPSILON){
 		return outputMin;
 	} else {
-		float outVal = ((value - inputMin) / (inputMax - inputMin) * (outputMax - outputMin) + outputMin);
-		return outVal;
+		return ((value - inputMin) / (inputMax - inputMin) * (outputMax - outputMin) + outputMin);
+		
 	}
 }
 

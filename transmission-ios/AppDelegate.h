@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) TransmissionMainViewController* tmvc;
+@property (strong, nonatomic) UINavigationController* navigationController;
 
 @end
