@@ -304,9 +304,28 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // List all fonts on iPhone
+    NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
+    NSArray *fontNames;
+    NSInteger indFamily, indFont;
+    for (indFamily=0; indFamily<[familyNames count]; ++indFamily)
+    {
+        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
+        fontNames = [[NSArray alloc] initWithArray:
+                     [UIFont fontNamesForFamilyName:
+                      [familyNames objectAtIndex:indFamily]]];
+        for (indFont=0; indFont<[fontNames count]; ++indFont)
+        {
+            NSLog(@"    Font name: %@", [fontNames objectAtIndex:indFont]);
+        }
+        //[fontNames release];
+    }
+    //[familyNames release];
+    
+    
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    NSLog(@"v height: %f", self.view.frame.size.height);
     
     [self setupOscillators];
     [self setupUI];
@@ -375,7 +394,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     
     
     //about button
-    CGFloat about_button_width = 150.0;
+    CGFloat about_button_width = 160.0;
     _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
                                                               self.view.frame.size.width/2 - about_button_width/2,
                                                               30,
@@ -384,6 +403,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_aboutButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_aboutButton setBackgroundColor:[UIColor whiteColor]];
     [_aboutButton setTitle:@"TRANSMISSIONS" forState:UIControlStateNormal];
+    [_aboutButton.titleLabel setFont:[TMConstants orbitronFontBlack:16]];
     [_aboutButton addTarget:self action:@selector(aboutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_aboutButton];
     
@@ -402,6 +422,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                           synth_button_size)];
     [_aButton setTitle:@"A" forState:UIControlStateNormal];
     [_aButton setBackgroundColor:button_color];
+    [_aButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_aButton addTarget:self action:@selector(aButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_aButton];
     
@@ -413,6 +434,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                           synth_button_size)];
     [_eButton setTitle:@"E" forState:UIControlStateNormal];
     [_eButton setBackgroundColor:button_color];
+    [_eButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_eButton addTarget:self action:@selector(eButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eButton];
     
@@ -429,6 +451,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a1Button setBackgroundColor:[UIColor whiteColor]];
     [_a1Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_a1Button setTitle:@"A1" forState:UIControlStateNormal];
+    [_a1Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_a1Button addTarget:self action:@selector(a1ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_a1Button];
     
@@ -439,6 +462,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a2Button setBackgroundColor:[UIColor whiteColor]];
     [_a2Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a2Button setTitle:@"A2" forState:UIControlStateNormal];
+    [_a2Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_a2Button addTarget:self action:@selector(a2ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_a2Button];
     
@@ -449,6 +473,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a3Button setBackgroundColor:[UIColor whiteColor]];
     [_a3Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a3Button setTitle:@"A3" forState:UIControlStateNormal];
+    [_a3Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_a3Button addTarget:self action:@selector(a3ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_a3Button];
     
@@ -459,6 +484,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a4Button setBackgroundColor:[UIColor whiteColor]];
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a4Button setTitle:@"A4" forState:UIControlStateNormal];
+    [_a4Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_a4Button addTarget:self action:@selector(a4ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_a4Button];
     
@@ -469,6 +495,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_a5Button setBackgroundColor:[UIColor whiteColor]];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitle:@"A0" forState:UIControlStateNormal];
+    [_a5Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_a5Button addTarget:self action:@selector(a5ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_a5Button];
     
@@ -484,6 +511,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e1Button setBackgroundColor:[UIColor whiteColor]];
     [_e1Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_e1Button setTitle:@"E1" forState:UIControlStateNormal];
+    [_e1Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_e1Button addTarget:self action:@selector(e1ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_e1Button];
     
@@ -494,6 +522,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e2Button setBackgroundColor:[UIColor whiteColor]];
     [_e2Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e2Button setTitle:@"E2" forState:UIControlStateNormal];
+    [_e2Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_e2Button addTarget:self action:@selector(e2ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_e2Button];
     
@@ -504,6 +533,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e3Button setBackgroundColor:[UIColor whiteColor]];
     [_e3Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e3Button setTitle:@"E3" forState:UIControlStateNormal];
+    [_e3Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_e3Button addTarget:self action:@selector(e3ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_e3Button];
     
@@ -514,6 +544,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e4Button setBackgroundColor:[UIColor whiteColor]];
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e4Button setTitle:@"E4" forState:UIControlStateNormal];
+    [_e4Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_e4Button addTarget:self action:@selector(e4ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_e4Button];
     
@@ -524,6 +555,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_e5Button setBackgroundColor:[UIColor whiteColor]];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitle:@"E0" forState:UIControlStateNormal];
+    [_e5Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
     [_e5Button addTarget:self action:@selector(e5ButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_e5Button];
     

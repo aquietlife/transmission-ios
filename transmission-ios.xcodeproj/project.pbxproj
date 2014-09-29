@@ -22,6 +22,12 @@
 		8E05E50019AD233A00CFE7CA /* transmission_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */; };
 		8E05E50B19AD28D300CFE7CA /* TransmissionMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */; };
 		8E05E50D19AD2DE300CFE7CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */; };
+		8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE519DA0FA70029D3B1 /* Orbitron-Black.ttf */; };
+		8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */; };
+		8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */; };
+		8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */; };
+		8E33BEEE19DA0FA70029D3B1 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE919DA0FA70029D3B1 /* launch@2x.png */; };
+		8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */; };
 		8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */; };
 		8E69EDD719D21D6400B81D3D /* LARSMorse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD119D21D6400B81D3D /* LARSMorse.m */; };
 		8E69EDD819D21D6400B81D3D /* LARSStrobe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD319D21D6400B81D3D /* LARSStrobe.m */; };
@@ -64,6 +70,12 @@
 		8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransmissionMainViewController.m; path = ../TransmissionMainViewController.m; sourceTree = "<group>"; };
 		8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8E1E62E719DA0AE2009FF1BF /* transmission-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "transmission-ios.entitlements"; sourceTree = "<group>"; };
+		8E33BEE519DA0FA70029D3B1 /* Orbitron-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Black.ttf"; sourceTree = "<group>"; };
+		8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
+		8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
+		8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
+		8E33BEE919DA0FA70029D3B1 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
+		8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
 		8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LARSMorse-Strobe.podspec"; sourceTree = "<group>"; };
 		8E69EDD019D21D6400B81D3D /* LARSMorse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSMorse.h; sourceTree = "<group>"; };
 		8E69EDD119D21D6400B81D3D /* LARSMorse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSMorse.m; sourceTree = "<group>"; };
@@ -114,6 +126,7 @@
 				8E05E4F919AD233A00CFE7CA /* transmission-iosTests */,
 				8E05E4D919AD233A00CFE7CA /* Frameworks */,
 				8E05E4D819AD233A00CFE7CA /* Products */,
+				8E33BEE319DA0FA70029D3B1 /* assets */,
 				9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -187,6 +200,27 @@
 				8E05E4FC19AD233A00CFE7CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E33BEE319DA0FA70029D3B1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				8E33BEE419DA0FA70029D3B1 /* fonts */,
+				8E33BEE919DA0FA70029D3B1 /* launch@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		8E33BEE419DA0FA70029D3B1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */,
+				8E33BEE519DA0FA70029D3B1 /* Orbitron-Black.ttf */,
+				8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */,
+				8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */,
+				8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		8E69EDCE19D21D6400B81D3D /* LARSMorse-Strobe */ = {
@@ -291,9 +325,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */,
 				8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */,
 				8E05E4E519AD233A00CFE7CA /* InfoPlist.strings in Resources */,
+				8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */,
 				8E05E4ED19AD233A00CFE7CA /* Images.xcassets in Resources */,
+				8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */,
+				8E33BEEE19DA0FA70029D3B1 /* launch@2x.png in Resources */,
+				8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */,
+				8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */,
 				8E69EDD919D21D6400B81D3D /* MorseDict.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,13 +515,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Johann Diedrick (A9QGCEL6ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Johann Diedrick (A9QGCEL6ZB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "10D598EA-2865-4690-A180-1F9BFC9DE1E8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -493,13 +533,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Johann Diedrick (A9QGCEL6ZB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Johann Diedrick (A9QGCEL6ZB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "10D598EA-2865-4690-A180-1F9BFC9DE1E8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

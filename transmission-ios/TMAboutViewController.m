@@ -60,6 +60,7 @@
     [_aboutText setText:@ABOUT_TEXT];
     [_aboutText setEditable:NO];
     [_aboutText setScrollEnabled:YES];
+    [_aboutText setFont:[TMConstants specialEliteFont:14]];
     [self.view addSubview:_aboutText];
     
     // white top bar

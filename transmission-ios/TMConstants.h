@@ -12,6 +12,12 @@
 
 + (UIColor*)greenColor;
 + (UIColor*)redColor;
++ (UIFont*)orbitronFontRegular:(CGFloat)size;
++ (UIFont*)orbitronFontMedium:(CGFloat)size;
++ (UIFont*)orbitronFontBold:(CGFloat)size;
++ (UIFont*)orbitronFontBlack:(CGFloat)size;
++ (UIFont*)specialEliteFont:(CGFloat)size;
+
 
 
 @end

@@ -20,5 +20,24 @@
     
 }
 
++ (UIFont*)orbitronFontRegular:(CGFloat)size{
+    return [UIFont fontWithName:@"Orbitron-Regular" size:size];
+}
+
++ (UIFont*)orbitronFontBlack:(CGFloat)size{
+    return [UIFont fontWithName:@"Orbitron-Black" size:size];
+}
+
++ (UIFont*)orbitronFontMedium:(CGFloat)size{
+    return [UIFont fontWithName:@"Orbitron-Medium" size:size];
+}
+
++ (UIFont*)orbitronFontBold:(CGFloat)size{
+    return [UIFont fontWithName:@"Orbitron-Regular" size:size];
+}
+
++ (UIFont*)specialEliteFont:(CGFloat)size{
+    return [UIFont fontWithName:@"SpecialElite-Regular" size:size];
+}
 
 @end
