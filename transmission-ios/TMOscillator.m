@@ -40,11 +40,11 @@
     */
     if (type == sineWave){
      
-        return sin(newPhase) * volume * 2.0;
+        return sin(newPhase) * volume * 10.0;
     
     } else if (type == squareWave){
      
-        return (sin(newPhase) > 0 ? 1: -1) * volume;
+        return (sin(newPhase) > 0 ? 1: -1) * volume * 5.0;
     
     } else if (type == triangleWave){
         
@@ -52,7 +52,7 @@
         //float pct = newPhase / M_2_PI;
         //return (pct < 0.0 ? [self map:pct inputMin:0.0 inputMax:0.5 outputMin:-1.0 outputMax:1.0] : [self map:pct inputMin:0.5 inputMax:1.0 outputMin:1.0 outputMax:-1.0]) * volume;
         
-        return ( (8 / pow(M_PI,2)) * (sin(newPhase) - sin(3*newPhase)/9 + sin(5*newPhase)/25) ) * volume;
+        return ( (8 / pow(M_PI,2)) * (sin(newPhase) - sin(3*newPhase)/9 + sin(5*newPhase)/25) ) * volume * 10.0;;
         
     } else if (type==sawWave){
         
