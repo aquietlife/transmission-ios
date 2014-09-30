@@ -392,7 +392,6 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 
 -(void)setupUI{
     
-    
     //about button
     CGFloat about_button_width = 200.0;
     _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
@@ -409,8 +408,6 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     
     
     UIColor* button_color = [TMConstants greenColor];
-    
-    
     
     CGFloat synth_button_size = 100.0;
 
@@ -783,44 +780,48 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     isAPlaying = !isAPlaying;
     
     NSLog(@"is a playing: %hhd", isAPlaying);
-
     
     if (isAPlaying) { // if a is playing and e isn't, start strobing
         [_aButton setBackgroundColor:[TMConstants redColor]];
         if (!isEPlaying) {
-            [_strobe turnOn];
-            [_strobe startStrobe];
+            if (![_strobe isRunning]) {
+                [_strobe turnOn];
+                [_strobe startStrobe];
+            }
         }
     }
     else if (!isAPlaying){
         [_aButton setBackgroundColor:[TMConstants greenColor]];
         if (!isEPlaying) {
-            [_strobe stopStrobe];
-            [_strobe turnOff];
+            if ([_strobe isRunning]) {
+                [_strobe stopStrobe];
+                [_strobe turnOff];
+            }
         }
     }
-
 }
 
 -(void)eButtonPressed:(id)sender{
     
     isEPlaying = !isEPlaying;
-    
     NSLog(@"is e playing: %hhd", isEPlaying);
 
     if (isEPlaying) { // if e is playing and e isn't start strobing
         [_eButton setBackgroundColor:[TMConstants redColor]];
         if (!isAPlaying) {
-            [_strobe turnOn];
-            [_strobe startStrobe];
+            if (![_strobe isRunning]){
+                [_strobe turnOn];
+                [_strobe startStrobe];
+            }
         }
     }
-
     else if(!isEPlaying){
         [_eButton setBackgroundColor:[TMConstants greenColor]];
         if (!isAPlaying) {
-            [_strobe stopStrobe];
-            [_strobe turnOff];
+            if ([_strobe isRunning]){
+                [_strobe stopStrobe];
+                [_strobe turnOff];
+            }
         }
     }
 }
@@ -1080,7 +1081,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 -(void)setupTorch{
     _torch = [[LARSTorch alloc] initWithTorchState:LARSTorchStateOff];
     _strobe = [[LARSStrobe alloc] initWithLARSTorch:_torch];
-    [_strobe setStrobePeriodWithPeriod:0.005];
+    [_strobe setStrobePeriodWithPeriod:0.1];
     //[_strobe setStrobePeriodWithFrequency:4.0];
 }
 
