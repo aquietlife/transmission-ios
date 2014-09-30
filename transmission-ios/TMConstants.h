@@ -24,6 +24,10 @@
 + (UIFont*)orbitronFontBlack:(CGFloat)size;
 + (UIFont*)specialEliteFont:(CGFloat)size;
 
+//utility functions
+
++(void)printFonts;
+
 
 
 @end

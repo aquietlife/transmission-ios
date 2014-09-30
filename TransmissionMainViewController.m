@@ -26,10 +26,8 @@ OSStatus RenderTone(
                     AudioBufferList *ioData)
 
 {
-    const double amplitude = 0.25; // fixed amplitude for now, will want to change for individual tone volume
     
     //get tone parameters out of view controller...im not really sure how this works or what it does :x
-    //maybe this will make more sense if we have sine synths as objects down the road..w/e
     TransmissionMainViewController *tmvc = (__bridge TransmissionMainViewController *) inRefCon;
     
     
@@ -50,79 +48,10 @@ OSStatus RenderTone(
     
     BOOL isAPlaying = tmvc->isAPlaying;
     BOOL isEPlaying = tmvc->isEPlaying;
-    
-    double aVolume = tmvc->aVolume;
-    double eVolume = tmvc->eVolume;
-    
-//    if (isAPlaying){
-//        aVolume = tmvc->aVolume;
-//    }else{
-//        aVolume = 0.0;
-//    }
-//    
-//    if (isEPlaying){
-//        eVolume = tmvc->eVolume;
-//    }else{
-//        eVolume = 0.0;
-//    }
-//    
-    
-    /*
-    if (isAPlaying && isEPlaying) {
-        for (UInt32 frame = 0; frame < inNumberFrames; frame++) {
-            
-            buffer[frame] = ( (sin(aTheta) + sin(eTheta)) / 2 ) * amplitude;
-            
-            aTheta += a_theta_increment;
-            eTheta += e_theta_increment;
-            
-            if (aTheta > 2.0 * M_PI ){ // if theta goes over 2PI, reset by 2PI
-                aTheta -= 2.0 * M_PI;
-            }
-            
-            if (eTheta > 2.0 * M_PI ){ // if theta goes over 2PI, reset by 2PI
-                eTheta -= 2.0 * M_PI;
-            }
-            
-        }
-    }
-    
-    else if (isAPlaying) {
-        for (UInt32 frame = 0; frame < inNumberFrames; frame++) {
-            
-            buffer[frame] = sin(aTheta)  * amplitude;
-            
-            aTheta += a_theta_increment;
-            
-            if (aTheta > 2.0 * M_PI ){ // if theta goes over 2PI, reset by 2PI
-                aTheta -= 2.0 * M_PI;
-            }
-            
 
-            
-        }
-    } else if (isEPlaying) {
-        for (UInt32 frame = 0; frame < inNumberFrames; frame++) {
-            
-            buffer[frame] = sin(eTheta) * amplitude;
-            
-            eTheta += e_theta_increment;
-            
-            
-            if (eTheta > 2.0 * M_PI ){ // if theta goes over 2PI, reset by 2PI
-                eTheta -= 2.0 * M_PI;
-            }
-            
-        }
-    }
-     */
-    
     TMOscillator* aOscillator = tmvc->aOscillator;
-    //[aOscillator setType:inverseSawWave];
     
     TMOscillator* eOscillator = tmvc->eOscillator;
-    //[eOscillator setType:squareWave];
-    
     
         if (isAPlaying){
             [aOscillator setVolume:tmvc->aVolume];
@@ -141,25 +70,6 @@ OSStatus RenderTone(
     for (UInt32 frame = 0; frame < inNumberFrames; frame++) {
         
         buffer[frame] = ( [aOscillator getSample:aTheta] + [eOscillator getSample:eTheta] ) / 2;
-        //sine
-        //buffer[frame] = ( sin(aTheta) * aVolume);//  +  sin(eTheta) * eVolume )  / 2 ;
-        
-        
-        //square
-        //buffer[frame] = ( ( (sin(aTheta) > 0 ? 1: -1) * aVolume)  +   (sin(eTheta) > 0 ? 1: -1) * eVolume )  / 2 ;
-        
-        //(sin(aTheta) > 0 ? 1: -1) * volume;
-        
-        /*
-        //triangle
-        float aPct = aTheta / M_2_PI;
-        float ePct = eTheta / M_2_PI;
-        buffer[frame] = ( ((aPct < 0.5 ? [self map:aPct inputMin:0.0 inputMax:0.5 outputMin:-1 outputMax:1] : [self map:aPct inputMin:0.5 inputMax:1.0 outputMin:1.0 outputMax:-1.0]) * aVolume) + ((ePct < 0.5 ? [self map:ePct inputMin:0.0 inputMax:0.5 outputMin:-1 outputMax:1] : [self map:ePct inputMin:0.5 inputMax:1.0 outputMin:1.0 outputMax:-1.0]) * eVolume) )/ 2;
-
-        
-        buffer[frame] = ( ([aOscillator getSample] * aVolume)  +  ([eOscillator getSample] * eVolume) )  / 2 ;
-         */
-        
         
         aTheta += a_theta_increment;
         eTheta += e_theta_increment;
@@ -173,11 +83,6 @@ OSStatus RenderTone(
         }
         
     }
-    
-    //NSLog(@"a phase: %f", aOscillator->phase);
-    //NSLog(@"a theta: %f", aTheta);
-
-    
     
     //store theta back in the view controller
     
@@ -304,25 +209,6 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // List all fonts on iPhone
-    NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
-    NSArray *fontNames;
-    NSInteger indFamily, indFont;
-    for (indFamily=0; indFamily<[familyNames count]; ++indFamily)
-    {
-        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
-        fontNames = [[NSArray alloc] initWithArray:
-                     [UIFont fontNamesForFamilyName:
-                      [familyNames objectAtIndex:indFamily]]];
-        for (indFont=0; indFont<[fontNames count]; ++indFont)
-        {
-            NSLog(@"    Font name: %@", [fontNames objectAtIndex:indFont]);
-        }
-        //[fontNames release];
-    }
-    //[familyNames release];
-    
     
     [self.view setBackgroundColor:[UIColor blackColor]];
     

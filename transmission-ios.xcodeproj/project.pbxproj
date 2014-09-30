@@ -26,7 +26,6 @@
 		8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */; };
 		8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */; };
 		8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */; };
-		8E33BEEE19DA0FA70029D3B1 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE919DA0FA70029D3B1 /* launch@2x.png */; };
 		8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */; };
 		8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */; };
 		8E69EDD719D21D6400B81D3D /* LARSMorse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD119D21D6400B81D3D /* LARSMorse.m */; };
@@ -36,6 +35,11 @@
 		8EAA0F8119D9AEB600623E00 /* TMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA0F8019D9AEB600623E00 /* TMConstants.m */; };
 		8EAA0F8419D9BBC600623E00 /* TMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA0F8319D9BBC600623E00 /* TMAboutViewController.m */; };
 		8EB7E64A19B5219F00969A43 /* TMOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E64919B5219F00969A43 /* TMOscillator.m */; };
+		8EF550B819DB263800D820BF /* AppIcon-iPad@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B319DB263800D820BF /* AppIcon-iPad@1x.png */; };
+		8EF550B919DB263800D820BF /* AppIcon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B419DB263800D820BF /* AppIcon-iPad@2x.png */; };
+		8EF550BA19DB263800D820BF /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B519DB263800D820BF /* AppIcon@2x.png */; };
+		8EF550BB19DB263800D820BF /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B619DB263800D820BF /* AppIcon@3x.png */; };
+		8EF550BC19DB263800D820BF /* AppStoreAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B719DB263800D820BF /* AppStoreAppIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +78,6 @@
 		8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
 		8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
 		8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
-		8E33BEE919DA0FA70029D3B1 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
 		8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
 		8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LARSMorse-Strobe.podspec"; sourceTree = "<group>"; };
 		8E69EDD019D21D6400B81D3D /* LARSMorse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSMorse.h; sourceTree = "<group>"; };
@@ -89,6 +92,11 @@
 		8EAA0F8319D9BBC600623E00 /* TMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAboutViewController.m; sourceTree = "<group>"; };
 		8EB7E64819B5219F00969A43 /* TMOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMOscillator.h; sourceTree = "<group>"; };
 		8EB7E64919B5219F00969A43 /* TMOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMOscillator.m; sourceTree = "<group>"; };
+		8EF550B319DB263800D820BF /* AppIcon-iPad@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-iPad@1x.png"; sourceTree = "<group>"; };
+		8EF550B419DB263800D820BF /* AppIcon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-iPad@2x.png"; sourceTree = "<group>"; };
+		8EF550B519DB263800D820BF /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
+		8EF550B619DB263800D820BF /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
+		8EF550B719DB263800D820BF /* AppStoreAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreAppIcon.png; sourceTree = "<group>"; };
 		9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,8 +213,8 @@
 		8E33BEE319DA0FA70029D3B1 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				8EF550B219DB25FD00D820BF /* appicons */,
 				8E33BEE419DA0FA70029D3B1 /* fonts */,
-				8E33BEE919DA0FA70029D3B1 /* launch@2x.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -235,6 +243,18 @@
 				8E69EDD519D21D6400B81D3D /* README.md */,
 			);
 			path = "LARSMorse-Strobe";
+			sourceTree = "<group>";
+		};
+		8EF550B219DB25FD00D820BF /* appicons */ = {
+			isa = PBXGroup;
+			children = (
+				8EF550B319DB263800D820BF /* AppIcon-iPad@1x.png */,
+				8EF550B419DB263800D820BF /* AppIcon-iPad@2x.png */,
+				8EF550B519DB263800D820BF /* AppIcon@2x.png */,
+				8EF550B619DB263800D820BF /* AppIcon@3x.png */,
+				8EF550B719DB263800D820BF /* AppStoreAppIcon.png */,
+			);
+			path = appicons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,14 +346,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */,
+				8EF550BA19DB263800D820BF /* AppIcon@2x.png in Resources */,
+				8EF550BB19DB263800D820BF /* AppIcon@3x.png in Resources */,
 				8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */,
 				8E05E4E519AD233A00CFE7CA /* InfoPlist.strings in Resources */,
 				8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */,
 				8E05E4ED19AD233A00CFE7CA /* Images.xcassets in Resources */,
 				8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */,
-				8E33BEEE19DA0FA70029D3B1 /* launch@2x.png in Resources */,
 				8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */,
+				8EF550B919DB263800D820BF /* AppIcon-iPad@2x.png in Resources */,
+				8EF550BC19DB263800D820BF /* AppStoreAppIcon.png in Resources */,
 				8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */,
+				8EF550B819DB263800D820BF /* AppIcon-iPad@1x.png in Resources */,
 				8E69EDD919D21D6400B81D3D /* MorseDict.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
+				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,7 +529,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
+				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -524,8 +548,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
+				PRODUCT_NAME = "transmission-ios";
+				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -542,8 +567,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
+				PRODUCT_NAME = "transmission-ios";
+				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -564,7 +590,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "transmission-iosTests/transmission-iosTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "transmission-iosTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -582,7 +608,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-iosTests/transmission-iosTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "transmission-iosTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
