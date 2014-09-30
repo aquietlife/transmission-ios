@@ -324,7 +324,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     //[familyNames release];
     
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:[UIColor blackColor]];
     
     
     [self setupOscillators];
@@ -394,16 +394,16 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     
     
     //about button
-    CGFloat about_button_width = 160.0;
+    CGFloat about_button_width = 200.0;
     _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
                                                               self.view.frame.size.width/2 - about_button_width/2,
                                                               30,
                                                               about_button_width,
                                                               20)];
     [_aboutButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
-    [_aboutButton setBackgroundColor:[UIColor whiteColor]];
+    [_aboutButton setBackgroundColor:[UIColor blackColor]];
     [_aboutButton setTitle:@"TRANSMISSIONS" forState:UIControlStateNormal];
-    [_aboutButton.titleLabel setFont:[TMConstants orbitronFontBlack:16]];
+    [_aboutButton.titleLabel setFont:[TMConstants orbitronFontMedium:18]];
     [_aboutButton addTarget:self action:@selector(aboutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_aboutButton];
     
@@ -416,24 +416,26 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 
     //set up a button
     _aButton = [[UIButton alloc] initWithFrame:CGRectMake(
-                                                          (self.view.frame.size.width/2)-40,
+                                                          (self.view.frame.size.width/2)-synth_button_size/2,
                                                           70,
                                                           synth_button_size,
                                                           synth_button_size)];
     [_aButton setTitle:@"A" forState:UIControlStateNormal];
     [_aButton setBackgroundColor:button_color];
+    [_aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_aButton addTarget:self action:@selector(aButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_aButton];
     
     //set up e button
     _eButton = [[UIButton alloc] initWithFrame:CGRectMake(
-                                                          (self.view.frame.size.width/2)-40,
-                                                          (self.view.frame.size.height/2)+30,
+                                                          (self.view.frame.size.width/2)-synth_button_size/2,
+                                                          (self.view.frame.size.height/2)+synth_button_size/2,
                                                           synth_button_size,
                                                           synth_button_size)];
     [_eButton setTitle:@"E" forState:UIControlStateNormal];
     [_eButton setBackgroundColor:button_color];
+    [_eButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_eButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_eButton addTarget:self action:@selector(eButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eButton];
@@ -448,7 +450,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_a1Button setBackgroundColor:[UIColor whiteColor]];
+    [_a1Button setBackgroundColor:[UIColor blackColor]];
     [_a1Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_a1Button setTitle:@"A1" forState:UIControlStateNormal];
     [_a1Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -459,7 +461,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_a2Button setBackgroundColor:[UIColor whiteColor]];
+    [_a2Button setBackgroundColor:[UIColor blackColor]];
     [_a2Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a2Button setTitle:@"A2" forState:UIControlStateNormal];
     [_a2Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -470,7 +472,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_a3Button setBackgroundColor:[UIColor whiteColor]];
+    [_a3Button setBackgroundColor:[UIColor blackColor]];
     [_a3Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a3Button setTitle:@"A3" forState:UIControlStateNormal];
     [_a3Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -481,7 +483,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_a4Button setBackgroundColor:[UIColor whiteColor]];
+    [_a4Button setBackgroundColor:[UIColor blackColor]];
     [_a4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a4Button setTitle:@"A4" forState:UIControlStateNormal];
     [_a4Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -492,7 +494,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_a5Button setBackgroundColor:[UIColor whiteColor]];
+    [_a5Button setBackgroundColor:[UIColor blackColor]];
     [_a5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_a5Button setTitle:@"A0" forState:UIControlStateNormal];
     [_a5Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -501,14 +503,14 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     
     
     //set up e octaves
-    CGFloat e_octave_y_position = self.view.frame.size.height - 60.0;
+    CGFloat e_octave_y_position = self.view.frame.size.height - 40.0;
     
 
     _e1Button = [[UIButton alloc] initWithFrame:CGRectMake(offset + octave_spacing,
                                                            e_octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_e1Button setBackgroundColor:[UIColor whiteColor]];
+    [_e1Button setBackgroundColor:[UIColor blackColor]];
     [_e1Button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_e1Button setTitle:@"E1" forState:UIControlStateNormal];
     [_e1Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -519,7 +521,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            e_octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_e2Button setBackgroundColor:[UIColor whiteColor]];
+    [_e2Button setBackgroundColor:[UIColor blackColor]];
     [_e2Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e2Button setTitle:@"E2" forState:UIControlStateNormal];
     [_e2Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -530,7 +532,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            e_octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_e3Button setBackgroundColor:[UIColor whiteColor]];
+    [_e3Button setBackgroundColor:[UIColor blackColor]];
     [_e3Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e3Button setTitle:@"E3" forState:UIControlStateNormal];
     [_e3Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -541,7 +543,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            e_octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_e4Button setBackgroundColor:[UIColor whiteColor]];
+    [_e4Button setBackgroundColor:[UIColor blackColor]];
     [_e4Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e4Button setTitle:@"E4" forState:UIControlStateNormal];
     [_e4Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -552,7 +554,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                            e_octave_y_position,
                                                            octave_button_size,
                                                            octave_button_size)];
-    [_e5Button setBackgroundColor:[UIColor whiteColor]];
+    [_e5Button setBackgroundColor:[UIColor blackColor]];
     [_e5Button setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_e5Button setTitle:@"E0" forState:UIControlStateNormal];
     [_e5Button.titleLabel setFont:[TMConstants orbitronFontBold:16]];
@@ -583,13 +585,16 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_aVolumeSlider addTarget:self action:@selector(aVolumeSliderChanged:) forControlEvents:UIControlEventValueChanged];
     [_aVolumeSlider setValue:0.25];
     [_aVolumeSlider setTintColor:button_color];
+    [_aVolumeSlider setThumbImage:[UIImage imageNamed:@"launch@2x.png"] forState:UIControlStateNormal]; //hack for known bug
+    [_aVolumeSlider setThumbTintColor:button_color];
+    [_aVolumeSlider setMaximumTrackTintColor:[UIColor blackColor]];
     _aVolumeSlider.transform = trans;
     [self.view addSubview:_aVolumeSlider];
     
     _eVolumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(
                                                                 self.view.frame.size.width-slider_x_spacing,
                                                                 
-                                                                self.view.frame.size.height/2 -20+ slider_y_spacing,
+                                                                self.view.frame.size.height/2 + slider_y_spacing,
                                                                 
                                                                 slider_width,
                                                                 
@@ -598,6 +603,9 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [_eVolumeSlider setMaximumValue:max_volume];
     [_eVolumeSlider setValue:0.25];
     [_eVolumeSlider setTintColor:button_color];
+    [_eVolumeSlider setThumbImage:[UIImage imageNamed:@"launch@2x.png"] forState:UIControlStateNormal]; //hack for known bug
+    [_eVolumeSlider setThumbTintColor:button_color];
+    [_eVolumeSlider setMaximumTrackTintColor:[UIColor blackColor]];
     [_eVolumeSlider addTarget:self action:@selector(eVolumeSliderChanged:) forControlEvents:UIControlEventValueChanged];
     _eVolumeSlider.transform = trans;
 
@@ -617,7 +625,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                               synth_type_button_size,
                                                               synth_type_button_size)];
     [_aSineButton setBackgroundColor:[UIColor redColor]];
-    [_aSineButton setTitle:@"Si" forState:UIControlStateNormal];
+    [_aSineButton setTitle:@UNICODE_SINE forState:UIControlStateNormal];
+    [_aSineButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aSineButton addTarget:self action:@selector(aSineButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [_aSineButton.layer setCornerRadius:synth_type_radius];
     [self.view addSubview:_aSineButton];
@@ -629,7 +638,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                                 synth_type_button_size,
                                                                 synth_type_button_size)];
     [_aSquareButton setBackgroundColor:button_color];
-    [_aSquareButton setTitle:@"Sq" forState:UIControlStateNormal];
+    [_aSquareButton setTitle:@UNICODE_SQUARE forState:UIControlStateNormal];
+    [_aSquareButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aSquareButton addTarget:self action:@selector(aSquareButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [_aSquareButton.layer setCornerRadius:synth_type_radius];
     [self.view addSubview:_aSquareButton];
@@ -638,7 +648,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                                   synth_type_top_spacing+synth_type_vspacing*2+synth_type_button_size*2,
                                                                   synth_type_button_size, synth_type_button_size)];
     [_aTriangleButton setBackgroundColor:button_color];
-    [_aTriangleButton setTitle:@"Tri" forState:UIControlStateNormal];
+    [_aTriangleButton setTitle:@UNICODE_TRIANGLE forState:UIControlStateNormal];
+    [_aTriangleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aTriangleButton addTarget:self action:@selector(aTriangleButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [_aTriangleButton.layer setCornerRadius:synth_type_radius];
     [self.view addSubview:_aTriangleButton];
@@ -650,7 +661,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                              synth_type_button_size,
                                                              synth_type_button_size)];
     [_aSawButton setBackgroundColor:button_color];
-    [_aSawButton setTitle:@"Saw" forState:UIControlStateNormal];
+    [_aSawButton setTitle:@UNICODE_SAW forState:UIControlStateNormal];
+    [_aSawButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aSawButton addTarget:self action:@selector(aSawButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [_aSawButton.layer setCornerRadius:synth_type_radius];
     [self.view addSubview:_aSawButton];
@@ -680,7 +692,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                               
                                                               synth_type_button_size)];
     [_eSineButton setBackgroundColor:[UIColor redColor]];
-    [_eSineButton setTitle:@"Si" forState:UIControlStateNormal];
+    [_eSineButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_eSineButton setTitle:@UNICODE_SINE forState:UIControlStateNormal];
     [_eSineButton.layer setCornerRadius:synth_type_radius];
     [_eSineButton addTarget:self action:@selector(eSineButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eSineButton];
@@ -695,7 +708,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                                 
                                                                 synth_type_button_size)];
     [_eSquareButton setBackgroundColor:button_color];
-    [_eSquareButton setTitle:@"Sq" forState:UIControlStateNormal];
+    [_eSquareButton setTitle:@UNICODE_SQUARE forState:UIControlStateNormal];
+    [_eSquareButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_eSquareButton.layer setCornerRadius:synth_type_radius];
     [_eSquareButton addTarget:self action:@selector(eSquareButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eSquareButton];
@@ -710,7 +724,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                                   
                                                                   synth_type_button_size)];
     [_eTriangleButton setBackgroundColor:button_color];
-    [_eTriangleButton setTitle:@"Tri" forState:UIControlStateNormal];
+    [_eTriangleButton setTitle:@UNICODE_TRIANGLE forState:UIControlStateNormal];
+    [_eTriangleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_eTriangleButton.layer setCornerRadius:synth_type_radius];
     [_eTriangleButton addTarget:self action:@selector(eTriangleButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eTriangleButton];
@@ -725,7 +740,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                              
                                                              synth_type_button_size)];
     [_eSawButton setBackgroundColor:button_color];
-    [_eSawButton setTitle:@"Saw" forState:UIControlStateNormal];
+    [_eSawButton setTitle:@UNICODE_SAW forState:UIControlStateNormal];
+    [_eSawButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_eSawButton.layer setCornerRadius:synth_type_radius];
     [_eSawButton addTarget:self action:@selector(eSawButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_eSawButton];
@@ -747,9 +763,9 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
      */
     
     //mid line
-    UIView* grayMidline = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height/2, self.view.frame.size.width, 1)];
-    [grayMidline setBackgroundColor:[UIColor lightGrayColor]];
-    [self.view addSubview:grayMidline];
+    UIView* midline = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height/2, self.view.frame.size.width, 1)];
+    [midline setBackgroundColor:[TMConstants greenColor]];
+    [self.view addSubview:midline];
     
 }
 

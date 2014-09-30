@@ -40,7 +40,7 @@
     */
     if (type == sineWave){
      
-        return sin(newPhase) * volume * 1.5;
+        return sin(newPhase) * volume * 2.0;
     
     } else if (type == squareWave){
      

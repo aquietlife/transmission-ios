@@ -8,7 +8,7 @@
 
 #import "TMAboutViewController.h"
 
-#define ABOUT_TEXT "\n\
+#define ABOUT_TEXT "\
     ABOUT \
     \n \n \n \
     Transmissions is an APP for audience members to play during the performance of Raft's 'Transmissions in A and E'.   It was designed by Pat Noecker (Raft) and Johann Diedrick with the intention that all who are present during Transmissions should be able to take part in the experience of this very simple and transformative collaboration. We believe our connected world can help manifest amazing human-moments that positively reflect our ever expanding and technology-influenced consciousness.  We hope this APP leads you to realizations about the potential of sound and the power of the possible, especially when technology is used to facilitate similar experiences like Transmissions. \
@@ -53,24 +53,28 @@
 #pragma mark - UI
 
 - (void)setupUI{
-    //setup textview
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    _aboutText = [[UITextView alloc] initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height)];
     
+    UIColor* background_color = [UIColor blackColor];
+    
+    //setup textview
+    [self.view setBackgroundColor:background_color];
+    _aboutText = [[UITextView alloc] initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height)];
     [_aboutText setText:@ABOUT_TEXT];
+    [_aboutText setTextColor:[TMConstants greenColor]];
     [_aboutText setEditable:NO];
     [_aboutText setScrollEnabled:YES];
     [_aboutText setFont:[TMConstants specialEliteFont:14]];
+    [_aboutText setBackgroundColor:background_color];
     [self.view addSubview:_aboutText];
     
     // white top bar
-    UIView* whiteTopBar = [[UIView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
-    [whiteTopBar setBackgroundColor:[UIColor whiteColor]];
+    UIView* whiteTopBar = [[UIView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 30)];
+    [whiteTopBar setBackgroundColor:background_color];
     [self.view addSubview:whiteTopBar];
     
     //back button
-    _backButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 20, 40, 40)];
-    [_backButton setBackgroundColor:[UIColor whiteColor]];
+    _backButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 0, 40, 40)];
+    [_backButton setBackgroundColor:background_color];
     [_backButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
     [_backButton setTitle:@"<" forState:UIControlStateNormal];
     [_backButton addTarget:self action:@selector(backButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -78,7 +82,6 @@
 }
 
 - (void) backButtonPressed:(id)sender{
-    NSLog(@"going back!");
     [self.navigationController popViewControllerAnimated:YES];
 }
 

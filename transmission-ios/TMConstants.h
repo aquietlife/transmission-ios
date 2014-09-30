@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define UNICODE_SINE "\u223F"
+#define UNICODE_SQUARE "\u25A0"
+#define UNICODE_TRIANGLE "\u25B2"
+#define UNICODE_SAW "\u26A1\uFE0E"
+
+
 @interface TMConstants : NSObject
 
 + (UIColor*)greenColor;
