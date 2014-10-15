@@ -656,8 +656,6 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 -(void)aboutButtonPressed:(id)sender{
     //setup tmavc and send it over
     _tmavc = [[TMAboutViewController alloc] init];
-    //[self presentViewController:_tmavc animated:YES completion:nil];
-    NSLog(@"this is being pressed");
     [self.navigationController pushViewController:_tmavc animated:YES];
 }
 

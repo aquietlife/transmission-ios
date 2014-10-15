@@ -495,7 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -529,7 +529,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -549,7 +549,7 @@
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
 				PRODUCT_NAME = "transmission-ios";
-				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,7 +568,7 @@
 				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
 				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
 				PRODUCT_NAME = "transmission-ios";
-				PROVISIONING_PROFILE = "ff36a799-6f53-4578-bc8e-d020f5709006";
+				PROVISIONING_PROFILE = "ea93602f-dd1b-4c2c-9e96-c5fa37dee383";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
