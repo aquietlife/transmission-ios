@@ -53,6 +53,7 @@
 
 //about
 @property (strong, nonatomic) UIButton *aboutButton;
+@property (strong, nonatomic) UIButton *aboutButton2;
 
 //a-e buttons
 @property (strong, nonatomic) UIButton* aButton;
@@ -102,5 +103,9 @@
 //@property (strong, nonatomic) TMOscillator* eOscillator;
 
 @property (strong, nonatomic) TMAboutViewController* tmavc;
+
+//about button glow
+-(void)animateAboutButton;
+
 
 @end

@@ -11,7 +11,7 @@
 #define ABOUT_TEXT "\
 ABOUT \
 \n \n \n \
-Transmissions is an APP designed by Pat Noecker (RAFT) and developed by Johann Diedrick for the act of audience-participation in Raft's \"Transmissions in A and E\".   Raft, the world’s first cellphonist,  believes that APPS and smart phones don’t have to isolate us and that they can facilitate unified and collaborative creative events like Transmissions.  We are a mirror of our ever expanding technologies and therein lies our new consciousness .  Raft hopes that with this in mind, the Transmissions APP leads you to revelations about the potential of technology, the power of sound and the joy of collective expression.  Please use this app during the performance or put on your own version of Transmissions with this APP as the basis.  Many thanks.      \
+Transmissions is an APP designed by Pat Noecker (RAFT) and developed by Johann Diedrick for the act of audience-participation in Raft's \"Transmissions in A and E\".   Raft, the world’s first cellphonist,  believes that APPS and smart phones don’t have to isolate us and that they can facilitate unified and collaborative creative events like Transmissions.  We are a mirror of our ever expanding technologies and therein lies our new consciousness .  Raft hopes that the Transmissions APP and experience leads you to revelations about the potential of technology, the power of sound and the joy of collective expression.  Please use this APP during the performance or put on your own version of Transmissions with this APP as the basis.  Many thanks.      \
     \n \n \n \
 INSTRUCTIONS \
 \n \n \n \
@@ -86,6 +86,7 @@ http://publicscience.co \
     [_aboutText setTextColor:[TMConstants greenColor]];
     [_aboutText setEditable:NO];
     [_aboutText setScrollEnabled:YES];
+    _aboutText.dataDetectorTypes = UIDataDetectorTypeLink;
     [_aboutText setFont:[TMConstants specialEliteFont:14]];
     [_aboutText setBackgroundColor:background_color];
     [self.view addSubview:_aboutText];

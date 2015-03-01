@@ -41,8 +41,8 @@ OSStatus RenderTone(
     double e_theta_increment = 2.0 * M_PI * tmvc->eFrequency / tmvc->sampleRate;
     
     //mono tone generator, only need first buffer
-    const int channel = 0;
-    Float32 *buffer = (Float32 *) ioData->mBuffers[channel].mData;
+    
+    Float32 *buffer = (Float32 *) ioData->mBuffers[0].mData;
     
     //generate the samples
     
@@ -67,10 +67,18 @@ OSStatus RenderTone(
     
     
     
+    
+    // Generate the samples
+
+    
     for (UInt32 frame = 0; frame < inNumberFrames; frame++) {
         
         buffer[frame] = ( [aOscillator getSample:aTheta] + [eOscillator getSample:eTheta] ) / 2;
         
+        //buffer[frame] = [aOscillator getSample:aTheta];
+       // buffer[frame + 1] = [eOscillator getSample:eTheta];
+
+     
         aTheta += a_theta_increment;
         eTheta += e_theta_increment;
         
@@ -81,8 +89,9 @@ OSStatus RenderTone(
         if (eTheta > 2.0 * M_PI ){ // if theta goes over 2PI, reset by 2PI
             eTheta -= 2.0 * M_PI;
         }
-        
+     
     }
+    
     
     //store theta back in the view controller
     
@@ -153,12 +162,16 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     streamFormat.mBytesPerFrame = four_bytes_per_float; // forgot this too!
     streamFormat.mChannelsPerFrame = 1;
     streamFormat.mBitsPerChannel = four_bytes_per_float * eight_bits_per_byte;
+     
     err = AudioUnitSetProperty(toneUnit,
                                kAudioUnitProperty_StreamFormat,
                                kAudioUnitScope_Input,
                                0,
                                &streamFormat,
                                sizeof(AudioStreamBasicDescription));
+     
+    
+    
     NSAssert1(err == noErr, @"Error setting stream format: %ld", err); // = != == ...
      
     
@@ -240,6 +253,13 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [self drawBufferPlot];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+   // [self animateAboutButton];
+    [self animateAboutButton];
+
+}
+
 -(void)viewDidUnload{
     self.frequencyLabel = nil;
     self.playButton = nil;
@@ -277,20 +297,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 
 
 -(void)setupUI{
-    
-    //about button
-    CGFloat about_button_width = 200.0;
-    _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
-                                                              self.view.frame.size.width/2 - about_button_width/2,
-                                                              30,
-                                                              about_button_width,
-                                                              20)];
-    [_aboutButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
-    [_aboutButton setBackgroundColor:[UIColor blackColor]];
-    [_aboutButton setTitle:@"TRANSMISSIONS" forState:UIControlStateNormal];
-    [_aboutButton.titleLabel setFont:[TMConstants orbitronFontMedium:18]];
-    [_aboutButton addTarget:self action:@selector(aboutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_aboutButton];
+
     
     
     UIColor* button_color = [TMConstants greenColor];
@@ -305,6 +312,7 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                           synth_button_size)];
     [_aButton setTitle:@"A" forState:UIControlStateNormal];
     [_aButton setBackgroundColor:button_color];
+    [_aButton.layer setCornerRadius:synth_button_size/2];
     [_aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_aButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_aButton addTarget:self action:@selector(aButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -318,6 +326,8 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
                                                           synth_button_size)];
     [_eButton setTitle:@"E" forState:UIControlStateNormal];
     [_eButton setBackgroundColor:button_color];
+    [_eButton.layer setCornerRadius:synth_button_size/2];
+
     [_eButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_eButton.titleLabel setFont:[TMConstants orbitronFontBlack:64]];
     [_eButton addTarget:self action:@selector(eButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -650,8 +660,127 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     [midline setBackgroundColor:[TMConstants greenColor]];
     [self.view addSubview:midline];
     
+    //about button
+    CGFloat about_button_width = 200.0;
+    _aboutButton = [[UIButton alloc] initWithFrame:CGRectMake(
+                                                              self.view.frame.size.width/2 - about_button_width/2,
+                                                              30,
+                                                              about_button_width,
+                                                              20)];
+    [_aboutButton setTitleColor:[TMConstants greenColor] forState:UIControlStateNormal];
+    [_aboutButton setBackgroundColor:[UIColor blackColor]];
+    [_aboutButton.titleLabel setFont:[TMConstants orbitronFontMedium:18]];
+    [_aboutButton addTarget:self action:@selector(aboutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    _aboutButton.titleLabel.shadowOffset = CGSizeMake(0.0, 0.0);
+    _aboutButton.titleLabel.layer.shadowColor = [UIColor redColor].CGColor;
+    _aboutButton.titleLabel.layer.shadowRadius = 2.0;
+    _aboutButton.titleLabel.layer.shadowOpacity = 0.0;
+    [_aboutButton setTitle:@"TRANSMISSIONS" forState:UIControlStateNormal];
+    
+    [self.view addSubview:_aboutButton];
+    
+    
+    //about2 button
+    _aboutButton2 = [[UIButton alloc] initWithFrame:CGRectMake(
+                                                              self.view.frame.size.width/2 - about_button_width/2,
+                                                              30,
+                                                              about_button_width,
+                                                              20)];
+    [_aboutButton2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_aboutButton2.titleLabel setFont:[TMConstants orbitronFontMedium:18]];
+    [_aboutButton2 addTarget:self action:@selector(aboutButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [_aboutButton2 setTitle:@"TRANSMISSIONS" forState:UIControlStateNormal];
+    
+    [self.view addSubview:_aboutButton2];
+    
+    
+    
 }
 
+-(void)animateAboutButton{
+
+    //_aboutButton.titleLabel.layer.shadowOpacity = 1.;
+    
+    
+//    [UIView animateWithDuration:10.0 delay:5.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//        _aboutButton.titleLabel.layer.shadowOpacity = 1.0;
+//    } completion:^(BOOL finished){
+//        NSLog(@"done");
+//    }];
+    
+    [self shadowGlow];
+    
+    [self aboutOpacity];
+    
+    /*
+    [UIView animateWithDuration:10.0 delay:5.0 animations:^{
+        _aboutButton.titleLabel.layer.shadowOpacity = 1.0;
+    } completion:^(BOOL finished){
+        NSLog(@"done");
+    }];
+    */
+    
+    /*
+    [UIView animateWithDuration:3.0 animations:^{
+        [self shadowOff];
+    } completion:^(BOOL finished){
+        [self shadowOn];
+    }];
+    */
+    //[self shadowOff];
+   // [self shadowOn];
+    
+    
+}
+
+/*
+-(void)shadowOff{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"shadowOpacity"];
+    anim.fromValue = [NSNumber numberWithFloat:1.0];
+    anim.toValue = [NSNumber numberWithFloat:0.0];
+    anim.duration = 3.0;
+    [_aboutButton.titleLabel.layer addAnimation:anim forKey:@"shadowOpacity"];
+    _aboutButton.titleLabel.layer.shadowOpacity = 0.0;
+}
+
+-(void)shadowOn{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"shadowOpacity"];
+    anim.fromValue = [NSNumber numberWithFloat:0.0];
+    anim.toValue = [NSNumber numberWithFloat:1.0];
+    anim.duration = 3.0;
+    [_aboutButton.titleLabel.layer addAnimation:anim forKey:@"shadowOpacity"];
+    _aboutButton.titleLabel.layer.shadowOpacity = 1.0;
+    
+}
+*/
+ 
+-(void)shadowGlow{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"shadowOpacity"];
+
+    anim.fromValue = [NSNumber numberWithFloat:0.0];
+    anim.toValue = [NSNumber numberWithFloat:1.0];
+    anim.repeatCount = HUGE_VAL;
+    anim.duration = 2.5;
+    anim.autoreverses = YES;
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [_aboutButton.titleLabel.layer addAnimation:anim forKey:@"shadowOpacity"];
+
+}
+
+-(void)aboutOpacity{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    
+    anim.fromValue = [NSNumber numberWithFloat:0.0];
+    anim.toValue = [NSNumber numberWithFloat:1.0];
+    anim.repeatCount = HUGE_VAL;
+    anim.duration = 2.5;
+    anim.autoreverses = YES;
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [_aboutButton2.layer addAnimation:anim forKey:@"fadeInOut"];
+    
+}
 
 -(void)aboutButtonPressed:(id)sender{
     //setup tmavc and send it over
