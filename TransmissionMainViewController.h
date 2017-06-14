@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AudioUnit/AudioUnit.h>
 #import "TMOscillator.h"
-#import <LARSTorch.h>
+//#import <LARSTorch.h>
 #import "LARSStrobe.h"
-#import <EZAudio.h>
+//#import <EZAudio.h>
 #import "TMAboutViewController.h"
 
 @interface TransmissionMainViewController : UIViewController
@@ -92,11 +92,11 @@
 @property (strong, nonatomic) UIButton* eInverseSawButton;
 
 //torch
-@property (strong, nonatomic) LARSTorch* torch;
-@property (strong, nonatomic) LARSStrobe* strobe;
+//@property (strong, nonatomic) LARSTorch* torch;
+//@property (strong, nonatomic) LARSStrobe* strobe;
 
 //ezaudio plotter
-@property (strong, nonatomic) EZAudioPlotGL* audioPlot;
+//@property (strong, nonatomic) EZAudioPlotGL* audioPlot;
 
 ////oscillators!
 //@property (strong, nonatomic) TMOscillator* aOscillator;

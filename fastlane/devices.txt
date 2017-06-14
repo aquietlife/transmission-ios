@@ -1,0 +1,2 @@
+Device ID	Device Name
+a2e1af6abcc16fc72f51c312cc8b81f97101d63c	JohanniPhone6s

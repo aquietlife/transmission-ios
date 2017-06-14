@@ -12,6 +12,7 @@
 #import "TransmissionMainViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <QuartzCore/QuartzCore.h>
+#import "LARSStrobe.h"
 
 #define A_FREQUENCY 440.0
 #define E_FREQUENCY 330.0
@@ -797,19 +798,19 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     if (isAPlaying) { // if a is playing and e isn't, start strobing
         [_aButton setBackgroundColor:[TMConstants redColor]];
         if (!isEPlaying) {
-            if (![_strobe isRunning]) {
-                [_strobe turnOn];
-                [_strobe startStrobe];
-            }
+//            if (![_strobe isRunning]) {
+//                [_strobe turnOn];
+//                [_strobe startStrobe];
+ //           }
         }
     }
     else if (!isAPlaying){
         [_aButton setBackgroundColor:[TMConstants greenColor]];
         if (!isEPlaying) {
-            if ([_strobe isRunning]) {
-                [_strobe stopStrobe];
-                [_strobe turnOff];
-            }
+ //           if ([_strobe isRunning]) {
+//                [_strobe stopStrobe];
+ //               [_strobe turnOff];
+//            }
         }
     }
 }
@@ -822,19 +823,19 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
     if (isEPlaying) { // if e is playing and e isn't start strobing
         [_eButton setBackgroundColor:[TMConstants redColor]];
         if (!isAPlaying) {
-            if (![_strobe isRunning]){
-                [_strobe turnOn];
-                [_strobe startStrobe];
-            }
+  //          if (![_strobe isRunning]){
+  //              [_strobe turnOn];
+  //              [_strobe startStrobe];
+  //          }
         }
     }
     else if(!isEPlaying){
         [_eButton setBackgroundColor:[TMConstants greenColor]];
         if (!isAPlaying) {
-            if ([_strobe isRunning]){
-                [_strobe stopStrobe];
-                [_strobe turnOff];
-            }
+   //         if ([_strobe isRunning]){
+    //            [_strobe stopStrobe];
+    //            [_strobe turnOff];
+  //          }
         }
     }
 }
@@ -1092,9 +1093,9 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
 
 #pragma mark - LARSTorch
 -(void)setupTorch{
-    _torch = [[LARSTorch alloc] initWithTorchState:LARSTorchStateOff];
-    _strobe = [[LARSStrobe alloc] initWithLARSTorch:_torch];
-    [_strobe setStrobePeriodWithPeriod:0.1];
+    //_torch = [[LARSTorch alloc] initWithTorchState:LARSTorchStateOff];
+//    _strobe = [[LARSStrobe alloc] initWithLARSTorch:_torch];
+ //   [_strobe setStrobePeriodWithPeriod:0.1];
     //[_strobe setStrobePeriodWithFrequency:4.0];
 }
 
@@ -1113,11 +1114,11 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
      Customizing the audio plot's look
      */
     // Background color
-    self.audioPlot.backgroundColor = [UIColor colorWithRed: 0.569 green: 0.82 blue: 0.478 alpha: 1];
+    //self.audioPlot.backgroundColor = [UIColor colorWithRed: 0.569 green: 0.82 blue: 0.478 alpha: 1];
     // Waveform color
-    self.audioPlot.color           = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    //self.audioPlot.color           = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     // Plot type
-    self.audioPlot.plotType        = EZPlotTypeBuffer;
+    //self.audioPlot.plotType        = EZPlotTypeBuffer;
 }
 
 /*
@@ -1125,11 +1126,11 @@ void ToneInturruptionListener(void *inClientData, UInt32 inInturruptionState){
  */
 -(void)drawBufferPlot {
     // Change the plot type to the buffer plot
-    self.audioPlot.plotType = EZPlotTypeBuffer;
+    //self.audioPlot.plotType = EZPlotTypeBuffer;
     // Don't mirror over the x-axis
-    self.audioPlot.shouldMirror = NO;
+    //self.audioPlot.shouldMirror = NO;
     // Don't fill
-    self.audioPlot.shouldFill = NO;
+    //self.audioPlot.shouldFill = NO;
 }
 
 

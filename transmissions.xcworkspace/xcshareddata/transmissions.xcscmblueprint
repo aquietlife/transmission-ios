@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AED098A2625D272DE685649B90E4D210A7EE251C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AED098A2625D272DE685649B90E4D210A7EE251C" : 9223372036854775807,
+    "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CDDC16A-9D1B-4475-9A8E-7FD374B2928C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AED098A2625D272DE685649B90E4D210A7EE251C" : "transmissions\/",
+    "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9" : "transmissions\/LARSMorse-Strobe\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "transmissions",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "transmissions.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larsacus\/LARSMorse-Strobe",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdiedrick\/transmission-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AED098A2625D272DE685649B90E4D210A7EE251C"
+    }
+  ]
+}

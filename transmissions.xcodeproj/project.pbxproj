@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AACAA357A314D60A8290E38 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD3C8C617F435BB0F61F72 /* libPods.a */; };
 		8E05E4DB19AD233A00CFE7CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DA19AD233A00CFE7CA /* Foundation.framework */; };
 		8E05E4DD19AD233A00CFE7CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DC19AD233A00CFE7CA /* CoreGraphics.framework */; };
 		8E05E4DF19AD233A00CFE7CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DE19AD233A00CFE7CA /* UIKit.framework */; };
-		8E05E4E519AD233A00CFE7CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E05E4E319AD233A00CFE7CA /* InfoPlist.strings */; };
-		8E05E4E719AD233A00CFE7CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E4E619AD233A00CFE7CA /* main.m */; };
-		8E05E4EB19AD233A00CFE7CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E4EA19AD233A00CFE7CA /* AppDelegate.m */; };
-		8E05E4ED19AD233A00CFE7CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E05E4EC19AD233A00CFE7CA /* Images.xcassets */; };
 		8E05E4F419AD233A00CFE7CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4F319AD233A00CFE7CA /* XCTest.framework */; };
 		8E05E4F519AD233A00CFE7CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DA19AD233A00CFE7CA /* Foundation.framework */; };
 		8E05E4F619AD233A00CFE7CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E4DE19AD233A00CFE7CA /* UIKit.framework */; };
-		8E05E4FE19AD233A00CFE7CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E05E4FC19AD233A00CFE7CA /* InfoPlist.strings */; };
-		8E05E50019AD233A00CFE7CA /* transmission_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */; };
-		8E05E50B19AD28D300CFE7CA /* TransmissionMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */; };
 		8E05E50D19AD2DE300CFE7CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */; };
 		8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE519DA0FA70029D3B1 /* Orbitron-Black.ttf */; };
 		8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */; };
@@ -32,9 +24,15 @@
 		8E69EDD819D21D6400B81D3D /* LARSStrobe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD319D21D6400B81D3D /* LARSStrobe.m */; };
 		8E69EDD919D21D6400B81D3D /* MorseDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E69EDD419D21D6400B81D3D /* MorseDict.plist */; };
 		8E69EDDA19D21D6400B81D3D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD519D21D6400B81D3D /* README.md */; };
-		8EAA0F8119D9AEB600623E00 /* TMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA0F8019D9AEB600623E00 /* TMConstants.m */; };
-		8EAA0F8419D9BBC600623E00 /* TMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA0F8319D9BBC600623E00 /* TMAboutViewController.m */; };
-		8EB7E64A19B5219F00969A43 /* TMOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E64919B5219F00969A43 /* TMOscillator.m */; };
+		8EEE29B51EC7B8B800BD4C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29A71EC7B8B800BD4C04 /* AppDelegate.m */; };
+		8EEE29B61EC7B8B800BD4C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE29A81EC7B8B800BD4C04 /* InfoPlist.strings */; };
+		8EEE29B71EC7B8B800BD4C04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE29AA1EC7B8B800BD4C04 /* Images.xcassets */; };
+		8EEE29B81EC7B8B800BD4C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29AB1EC7B8B800BD4C04 /* main.m */; };
+		8EEE29B91EC7B8B800BD4C04 /* TMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29AD1EC7B8B800BD4C04 /* TMAboutViewController.m */; };
+		8EEE29BA1EC7B8B800BD4C04 /* TMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29AF1EC7B8B800BD4C04 /* TMConstants.m */; };
+		8EEE29BB1EC7B8B800BD4C04 /* TMOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29B11EC7B8B800BD4C04 /* TMOscillator.m */; };
+		8EEE29BC1EC7B8B800BD4C04 /* transmissions-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE29B21EC7B8B800BD4C04 /* transmissions-Info.plist */; };
+		8EEE29BF1EC7B8D500BD4C04 /* TransmissionMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29BE1EC7B8D500BD4C04 /* TransmissionMainViewController.m */; };
 		8EF550B819DB263800D820BF /* AppIcon-iPad@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B319DB263800D820BF /* AppIcon-iPad@1x.png */; };
 		8EF550B919DB263800D820BF /* AppIcon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B419DB263800D820BF /* AppIcon-iPad@2x.png */; };
 		8EF550BA19DB263800D820BF /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF550B519DB263800D820BF /* AppIcon@2x.png */; };
@@ -53,27 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FCD3C8C617F435BB0F61F72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E05E4D719AD233A00CFE7CA /* transmission-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transmission-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E05E4D719AD233A00CFE7CA /* transmissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transmissions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E05E4DA19AD233A00CFE7CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E05E4DC19AD233A00CFE7CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8E05E4DE19AD233A00CFE7CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8E05E4E219AD233A00CFE7CA /* transmission-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transmission-ios-Info.plist"; sourceTree = "<group>"; };
-		8E05E4E419AD233A00CFE7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8E05E4E619AD233A00CFE7CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8E05E4E819AD233A00CFE7CA /* transmission-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "transmission-ios-Prefix.pch"; sourceTree = "<group>"; };
-		8E05E4E919AD233A00CFE7CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8E05E4EA19AD233A00CFE7CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E05E4EC19AD233A00CFE7CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E05E4F219AD233A00CFE7CA /* transmission-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "transmission-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E05E4F219AD233A00CFE7CA /* transmissionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transmissionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E05E4F319AD233A00CFE7CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8E05E4FB19AD233A00CFE7CA /* transmission-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transmission-iosTests-Info.plist"; sourceTree = "<group>"; };
-		8E05E4FD19AD233A00CFE7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transmission_iosTests.m; sourceTree = "<group>"; };
-		8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransmissionMainViewController.h; path = ../TransmissionMainViewController.h; sourceTree = "<group>"; };
-		8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransmissionMainViewController.m; path = ../TransmissionMainViewController.m; sourceTree = "<group>"; };
 		8E05E50C19AD2DE300CFE7CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		8E1E62E719DA0AE2009FF1BF /* transmission-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "transmission-ios.entitlements"; sourceTree = "<group>"; };
 		8E33BEE519DA0FA70029D3B1 /* Orbitron-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Black.ttf"; sourceTree = "<group>"; };
 		8E33BEE619DA0FA70029D3B1 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
 		8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
@@ -86,18 +70,27 @@
 		8E69EDD319D21D6400B81D3D /* LARSStrobe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSStrobe.m; sourceTree = "<group>"; };
 		8E69EDD419D21D6400B81D3D /* MorseDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MorseDict.plist; sourceTree = "<group>"; };
 		8E69EDD519D21D6400B81D3D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8EAA0F7F19D9AEB600623E00 /* TMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMConstants.h; sourceTree = "<group>"; };
-		8EAA0F8019D9AEB600623E00 /* TMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMConstants.m; sourceTree = "<group>"; };
-		8EAA0F8219D9BBC600623E00 /* TMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAboutViewController.h; sourceTree = "<group>"; };
-		8EAA0F8319D9BBC600623E00 /* TMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAboutViewController.m; sourceTree = "<group>"; };
-		8EB7E64819B5219F00969A43 /* TMOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMOscillator.h; sourceTree = "<group>"; };
-		8EB7E64919B5219F00969A43 /* TMOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMOscillator.m; sourceTree = "<group>"; };
+		8EEE29A61EC7B8B800BD4C04 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EEE29A71EC7B8B800BD4C04 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EEE29A91EC7B8B800BD4C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EEE29AA1EC7B8B800BD4C04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8EEE29AB1EC7B8B800BD4C04 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EEE29AC1EC7B8B800BD4C04 /* TMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAboutViewController.h; sourceTree = "<group>"; };
+		8EEE29AD1EC7B8B800BD4C04 /* TMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAboutViewController.m; sourceTree = "<group>"; };
+		8EEE29AE1EC7B8B800BD4C04 /* TMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMConstants.h; sourceTree = "<group>"; };
+		8EEE29AF1EC7B8B800BD4C04 /* TMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMConstants.m; sourceTree = "<group>"; };
+		8EEE29B01EC7B8B800BD4C04 /* TMOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMOscillator.h; sourceTree = "<group>"; };
+		8EEE29B11EC7B8B800BD4C04 /* TMOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMOscillator.m; sourceTree = "<group>"; };
+		8EEE29B21EC7B8B800BD4C04 /* transmissions-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "transmissions-Info.plist"; sourceTree = "<group>"; };
+		8EEE29B31EC7B8B800BD4C04 /* transmissions-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "transmissions-Prefix.pch"; sourceTree = "<group>"; };
+		8EEE29B41EC7B8B800BD4C04 /* transmissions.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = transmissions.entitlements; sourceTree = "<group>"; };
+		8EEE29BD1EC7B8D500BD4C04 /* TransmissionMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransmissionMainViewController.h; sourceTree = "<group>"; };
+		8EEE29BE1EC7B8D500BD4C04 /* TransmissionMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransmissionMainViewController.m; sourceTree = "<group>"; };
 		8EF550B319DB263800D820BF /* AppIcon-iPad@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-iPad@1x.png"; sourceTree = "<group>"; };
 		8EF550B419DB263800D820BF /* AppIcon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-iPad@2x.png"; sourceTree = "<group>"; };
 		8EF550B519DB263800D820BF /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
 		8EF550B619DB263800D820BF /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
 		8EF550B719DB263800D820BF /* AppStoreAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreAppIcon.png; sourceTree = "<group>"; };
-		9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +102,6 @@
 				8E05E4DD19AD233A00CFE7CA /* CoreGraphics.framework in Frameworks */,
 				8E05E4DF19AD233A00CFE7CA /* UIKit.framework in Frameworks */,
 				8E05E4DB19AD233A00CFE7CA /* Foundation.framework in Frameworks */,
-				6AACAA357A314D60A8290E38 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,21 +121,21 @@
 		8E05E4CE19AD233A00CFE7CA = {
 			isa = PBXGroup;
 			children = (
+				8EEE29BD1EC7B8D500BD4C04 /* TransmissionMainViewController.h */,
+				8EEE29BE1EC7B8D500BD4C04 /* TransmissionMainViewController.m */,
+				8EEE29A51EC7B8B800BD4C04 /* transmissions */,
 				8E69EDCE19D21D6400B81D3D /* LARSMorse-Strobe */,
-				8E05E4E019AD233A00CFE7CA /* transmission-ios */,
-				8E05E4F919AD233A00CFE7CA /* transmission-iosTests */,
 				8E05E4D919AD233A00CFE7CA /* Frameworks */,
 				8E05E4D819AD233A00CFE7CA /* Products */,
 				8E33BEE319DA0FA70029D3B1 /* assets */,
-				9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		8E05E4D819AD233A00CFE7CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E05E4D719AD233A00CFE7CA /* transmission-ios.app */,
-				8E05E4F219AD233A00CFE7CA /* transmission-iosTests.xctest */,
+				8E05E4D719AD233A00CFE7CA /* transmissions.app */,
+				8E05E4F219AD233A00CFE7CA /* transmissionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,58 +148,8 @@
 				8E05E4DC19AD233A00CFE7CA /* CoreGraphics.framework */,
 				8E05E4DE19AD233A00CFE7CA /* UIKit.framework */,
 				8E05E4F319AD233A00CFE7CA /* XCTest.framework */,
-				3FCD3C8C617F435BB0F61F72 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E05E4E019AD233A00CFE7CA /* transmission-ios */ = {
-			isa = PBXGroup;
-			children = (
-				8E1E62E719DA0AE2009FF1BF /* transmission-ios.entitlements */,
-				8E05E50919AD28D300CFE7CA /* TransmissionMainViewController.h */,
-				8E05E50A19AD28D300CFE7CA /* TransmissionMainViewController.m */,
-				8EAA0F8219D9BBC600623E00 /* TMAboutViewController.h */,
-				8EAA0F8319D9BBC600623E00 /* TMAboutViewController.m */,
-				8EAA0F7F19D9AEB600623E00 /* TMConstants.h */,
-				8EAA0F8019D9AEB600623E00 /* TMConstants.m */,
-				8EB7E64819B5219F00969A43 /* TMOscillator.h */,
-				8EB7E64919B5219F00969A43 /* TMOscillator.m */,
-				8E05E4E919AD233A00CFE7CA /* AppDelegate.h */,
-				8E05E4EA19AD233A00CFE7CA /* AppDelegate.m */,
-				8E05E4EC19AD233A00CFE7CA /* Images.xcassets */,
-				8E05E4E119AD233A00CFE7CA /* Supporting Files */,
-			);
-			path = "transmission-ios";
-			sourceTree = "<group>";
-		};
-		8E05E4E119AD233A00CFE7CA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E05E4E219AD233A00CFE7CA /* transmission-ios-Info.plist */,
-				8E05E4E319AD233A00CFE7CA /* InfoPlist.strings */,
-				8E05E4E619AD233A00CFE7CA /* main.m */,
-				8E05E4E819AD233A00CFE7CA /* transmission-ios-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8E05E4F919AD233A00CFE7CA /* transmission-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				8E05E4FF19AD233A00CFE7CA /* transmission_iosTests.m */,
-				8E05E4FA19AD233A00CFE7CA /* Supporting Files */,
-			);
-			path = "transmission-iosTests";
-			sourceTree = "<group>";
-		};
-		8E05E4FA19AD233A00CFE7CA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E05E4FB19AD233A00CFE7CA /* transmission-iosTests-Info.plist */,
-				8E05E4FC19AD233A00CFE7CA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8E33BEE319DA0FA70029D3B1 /* assets */ = {
@@ -245,6 +187,27 @@
 			path = "LARSMorse-Strobe";
 			sourceTree = "<group>";
 		};
+		8EEE29A51EC7B8B800BD4C04 /* transmissions */ = {
+			isa = PBXGroup;
+			children = (
+				8EEE29A61EC7B8B800BD4C04 /* AppDelegate.h */,
+				8EEE29A71EC7B8B800BD4C04 /* AppDelegate.m */,
+				8EEE29A81EC7B8B800BD4C04 /* InfoPlist.strings */,
+				8EEE29AA1EC7B8B800BD4C04 /* Images.xcassets */,
+				8EEE29AB1EC7B8B800BD4C04 /* main.m */,
+				8EEE29AC1EC7B8B800BD4C04 /* TMAboutViewController.h */,
+				8EEE29AD1EC7B8B800BD4C04 /* TMAboutViewController.m */,
+				8EEE29AE1EC7B8B800BD4C04 /* TMConstants.h */,
+				8EEE29AF1EC7B8B800BD4C04 /* TMConstants.m */,
+				8EEE29B01EC7B8B800BD4C04 /* TMOscillator.h */,
+				8EEE29B11EC7B8B800BD4C04 /* TMOscillator.m */,
+				8EEE29B21EC7B8B800BD4C04 /* transmissions-Info.plist */,
+				8EEE29B31EC7B8B800BD4C04 /* transmissions-Prefix.pch */,
+				8EEE29B41EC7B8B800BD4C04 /* transmissions.entitlements */,
+			);
+			path = transmissions;
+			sourceTree = "<group>";
+		};
 		8EF550B219DB25FD00D820BF /* appicons */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,28 +223,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E05E4D619AD233A00CFE7CA /* transmission-ios */ = {
+		8E05E4D619AD233A00CFE7CA /* transmissions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E05E50319AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmission-ios" */;
+			buildConfigurationList = 8E05E50319AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmissions" */;
 			buildPhases = (
-				CABF113E11EE480492AA6561 /* Check Pods Manifest.lock */,
 				8E05E4D319AD233A00CFE7CA /* Sources */,
 				8E05E4D419AD233A00CFE7CA /* Frameworks */,
 				8E05E4D519AD233A00CFE7CA /* Resources */,
-				487A5D63785B41F58A4F8A57 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "transmission-ios";
+			name = transmissions;
 			productName = "transmission-ios";
-			productReference = 8E05E4D719AD233A00CFE7CA /* transmission-ios.app */;
+			productReference = 8E05E4D719AD233A00CFE7CA /* transmissions.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E05E4F119AD233A00CFE7CA /* transmission-iosTests */ = {
+		8E05E4F119AD233A00CFE7CA /* transmissionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E05E50619AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmission-iosTests" */;
+			buildConfigurationList = 8E05E50619AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmissionsTests" */;
 			buildPhases = (
 				8E05E4EE19AD233A00CFE7CA /* Sources */,
 				8E05E4EF19AD233A00CFE7CA /* Frameworks */,
@@ -292,9 +253,9 @@
 			dependencies = (
 				8E05E4F819AD233A00CFE7CA /* PBXTargetDependency */,
 			);
-			name = "transmission-iosTests";
+			name = transmissionsTests;
 			productName = "transmission-iosTests";
-			productReference = 8E05E4F219AD233A00CFE7CA /* transmission-iosTests.xctest */;
+			productReference = 8E05E4F219AD233A00CFE7CA /* transmissionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,11 +264,11 @@
 		8E05E4CF19AD233A00CFE7CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Johann Diedrick";
 				TargetAttributes = {
 					8E05E4D619AD233A00CFE7CA = {
-						DevelopmentTeam = A9QGCEL6ZB;
+						DevelopmentTeam = 4C67C3U5UP;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -322,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E05E4D219AD233A00CFE7CA /* Build configuration list for PBXProject "transmission-ios" */;
+			buildConfigurationList = 8E05E4D219AD233A00CFE7CA /* Build configuration list for PBXProject "transmissions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -334,8 +295,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E05E4D619AD233A00CFE7CA /* transmission-ios */,
-				8E05E4F119AD233A00CFE7CA /* transmission-iosTests */,
+				8E05E4D619AD233A00CFE7CA /* transmissions */,
+				8E05E4F119AD233A00CFE7CA /* transmissionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,13 +309,14 @@
 				8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */,
 				8EF550BA19DB263800D820BF /* AppIcon@2x.png in Resources */,
 				8EF550BB19DB263800D820BF /* AppIcon@3x.png in Resources */,
+				8EEE29B61EC7B8B800BD4C04 /* InfoPlist.strings in Resources */,
 				8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */,
-				8E05E4E519AD233A00CFE7CA /* InfoPlist.strings in Resources */,
 				8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */,
-				8E05E4ED19AD233A00CFE7CA /* Images.xcassets in Resources */,
 				8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */,
+				8EEE29BC1EC7B8B800BD4C04 /* transmissions-Info.plist in Resources */,
 				8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */,
 				8EF550B919DB263800D820BF /* AppIcon-iPad@2x.png in Resources */,
+				8EEE29B71EC7B8B800BD4C04 /* Images.xcassets in Resources */,
 				8EF550BC19DB263800D820BF /* AppStoreAppIcon.png in Resources */,
 				8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */,
 				8EF550B819DB263800D820BF /* AppIcon-iPad@1x.png in Resources */,
@@ -366,59 +328,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E05E4FE19AD233A00CFE7CA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		487A5D63785B41F58A4F8A57 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CABF113E11EE480492AA6561 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E05E4D319AD233A00CFE7CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E05E50B19AD28D300CFE7CA /* TransmissionMainViewController.m in Sources */,
-				8E05E4EB19AD233A00CFE7CA /* AppDelegate.m in Sources */,
+				8EEE29BF1EC7B8D500BD4C04 /* TransmissionMainViewController.m in Sources */,
+				8EEE29B81EC7B8B800BD4C04 /* main.m in Sources */,
+				8EEE29B51EC7B8B800BD4C04 /* AppDelegate.m in Sources */,
+				8EEE29BA1EC7B8B800BD4C04 /* TMConstants.m in Sources */,
 				8E69EDD819D21D6400B81D3D /* LARSStrobe.m in Sources */,
 				8E69EDDA19D21D6400B81D3D /* README.md in Sources */,
-				8EB7E64A19B5219F00969A43 /* TMOscillator.m in Sources */,
-				8EAA0F8419D9BBC600623E00 /* TMAboutViewController.m in Sources */,
 				8E69EDD719D21D6400B81D3D /* LARSMorse.m in Sources */,
-				8EAA0F8119D9AEB600623E00 /* TMConstants.m in Sources */,
-				8E05E4E719AD233A00CFE7CA /* main.m in Sources */,
+				8EEE29BB1EC7B8B800BD4C04 /* TMOscillator.m in Sources */,
+				8EEE29B91EC7B8B800BD4C04 /* TMAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +354,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E05E50019AD233A00CFE7CA /* transmission_iosTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,24 +362,16 @@
 /* Begin PBXTargetDependency section */
 		8E05E4F819AD233A00CFE7CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E05E4D619AD233A00CFE7CA /* transmission-ios */;
+			target = 8E05E4D619AD233A00CFE7CA /* transmissions */;
 			targetProxy = 8E05E4F719AD233A00CFE7CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E05E4E319AD233A00CFE7CA /* InfoPlist.strings */ = {
+		8EEE29A81EC7B8B800BD4C04 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8E05E4E419AD233A00CFE7CA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8E05E4FC19AD233A00CFE7CA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E05E4FD19AD233A00CFE7CA /* en */,
+				8EEE29A91EC7B8B800BD4C04 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -473,14 +392,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Johann Diedrick (PLDHEEBW66)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A Quiet Life LLC (4C67C3U5UP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A Quiet Life LLC (4C67C3U5UP)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -493,9 +418,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0dda2037-9b3c-4ae0-b37d-d6d0fcc740d7";
+				PROVISIONING_PROFILE = "abd056bb-e815-4365-b519-4ddeef39e1e9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,22 +439,27 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Johann Diedrick (PLDHEEBW66)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A Quiet Life LLC (4C67C3U5UP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A Quiet Life LLC (4C67C3U5UP)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "0dda2037-9b3c-4ae0-b37d-d6d0fcc740d7";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE = "abd056bb-e815-4365-b519-4ddeef39e1e9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -538,18 +468,19 @@
 		};
 		8E05E50419AD233A00CFE7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Johann Diedrick (PLDHEEBW66)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_ENTITLEMENTS = transmissions/transmissions.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4C67C3U5UP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
-				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
-				PRODUCT_NAME = "transmission-ios";
-				PROVISIONING_PROFILE = "0dda2037-9b3c-4ae0-b37d-d6d0fcc740d7";
+				GCC_PREFIX_HEADER = "transmissions/transmissions-Prefix.pch";
+				INFOPLIST_FILE = "transmissions/transmissions-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aquietlife.transmissions;
+				PRODUCT_NAME = transmissions;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -557,18 +488,19 @@
 		};
 		8E05E50519AD233A00CFE7CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DA49CE4B7B94291A9CE2248 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "transmission-ios/transmission-ios.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Johann Diedrick (PLDHEEBW66)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_ENTITLEMENTS = transmissions/transmissions.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4C67C3U5UP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
-				INFOPLIST_FILE = "transmission-ios/transmission-ios-Info.plist";
-				PRODUCT_NAME = "transmission-ios";
-				PROVISIONING_PROFILE = "0dda2037-9b3c-4ae0-b37d-d6d0fcc740d7";
+				GCC_PREFIX_HEADER = "transmissions/transmissions-Prefix.pch";
+				INFOPLIST_FILE = "transmissions/transmissions-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aquietlife.transmissions;
+				PRODUCT_NAME = transmissions;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -577,20 +509,21 @@
 		8E05E50719AD233A00CFE7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/transmission-ios.app/transmission-ios";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/transmissions.app/transmissions";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "transmission-ios/transmissions-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "transmission-iosTests/transmission-iosTests-Info.plist";
-				PRODUCT_NAME = "transmission-iosTests";
+				INFOPLIST_FILE = "transmission-iosTests/transmissionsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = transmissionsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -599,16 +532,17 @@
 		8E05E50819AD233A00CFE7CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/transmission-ios.app/transmission-ios";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/transmissions.app/transmissions";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "transmission-ios/transmission-ios-Prefix.pch";
-				INFOPLIST_FILE = "transmission-iosTests/transmission-iosTests-Info.plist";
-				PRODUCT_NAME = "transmission-iosTests";
+				GCC_PREFIX_HEADER = "transmission-ios/transmissions-Prefix.pch";
+				INFOPLIST_FILE = "transmission-iosTests/transmissionsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = transmissionsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -617,7 +551,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E05E4D219AD233A00CFE7CA /* Build configuration list for PBXProject "transmission-ios" */ = {
+		8E05E4D219AD233A00CFE7CA /* Build configuration list for PBXProject "transmissions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E05E50119AD233A00CFE7CA /* Debug */,
@@ -626,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E05E50319AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmission-ios" */ = {
+		8E05E50319AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmissions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E05E50419AD233A00CFE7CA /* Debug */,
@@ -635,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E05E50619AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmission-iosTests" */ = {
+		8E05E50619AD233A00CFE7CA /* Build configuration list for PBXNativeTarget "transmissionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E05E50719AD233A00CFE7CA /* Debug */,

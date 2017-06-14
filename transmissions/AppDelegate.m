@@ -17,10 +17,10 @@
 
     _tmvc = [[TransmissionMainViewController alloc] init];
     _navigationController = [[UINavigationController alloc] initWithRootViewController:_tmvc];
-    //self.window.rootViewController = navigationController;
+    self.window.rootViewController = _navigationController;
     //[self.window makeKeyAndVisible];
     [_navigationController setNavigationBarHidden:YES];
-    [self.window addSubview:_navigationController.view];
+    //[self.window addSubview:_navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AED098A2625D272DE685649B90E4D210A7EE251C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AED098A2625D272DE685649B90E4D210A7EE251C" : 0,
+    "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9" : 0,
+    "19584E62DC8A922E6591C282BAFB650756E8BC02" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2107EC60-A7DF-4303-90D0-211535D210B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AED098A2625D272DE685649B90E4D210A7EE251C" : "transmissions\/",
+    "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9" : "transmissions\/LARSMorse-Strobe\/",
+    "19584E62DC8A922E6591C282BAFB650756E8BC02" : "transmission-ios\/UIView-Glow\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "transmission-ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "transmission-ios.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/thesecretlab\/UIView-Glow",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19584E62DC8A922E6591C282BAFB650756E8BC02"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larsacus\/LARSMorse-Strobe",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90C09C5A23444EC99DAB5F24B4CBE29A1439BDA9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdiedrick\/transmission-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AED098A2625D272DE685649B90E4D210A7EE251C"
+    }
+  ]
+}
