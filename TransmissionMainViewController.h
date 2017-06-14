@@ -10,7 +10,7 @@
 #import <AudioUnit/AudioUnit.h>
 #import "TMOscillator.h"
 //#import <LARSTorch.h>
-#import "LARSStrobe.h"
+//#import "LARSStrobe.h"
 //#import <EZAudio.h>
 #import "TMAboutViewController.h"
 

@@ -19,11 +19,6 @@
 		8E33BEEC19DA0FA70029D3B1 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */; };
 		8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */; };
 		8E33BEF019DA1E040029D3B1 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */; };
-		8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */; };
-		8E69EDD719D21D6400B81D3D /* LARSMorse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD119D21D6400B81D3D /* LARSMorse.m */; };
-		8E69EDD819D21D6400B81D3D /* LARSStrobe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD319D21D6400B81D3D /* LARSStrobe.m */; };
-		8E69EDD919D21D6400B81D3D /* MorseDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E69EDD419D21D6400B81D3D /* MorseDict.plist */; };
-		8E69EDDA19D21D6400B81D3D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8E69EDD519D21D6400B81D3D /* README.md */; };
 		8EEE29B51EC7B8B800BD4C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE29A71EC7B8B800BD4C04 /* AppDelegate.m */; };
 		8EEE29B61EC7B8B800BD4C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE29A81EC7B8B800BD4C04 /* InfoPlist.strings */; };
 		8EEE29B71EC7B8B800BD4C04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE29AA1EC7B8B800BD4C04 /* Images.xcassets */; };
@@ -63,13 +58,6 @@
 		8E33BEE719DA0FA70029D3B1 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
 		8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
 		8E33BEEF19DA1D360029D3B1 /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
-		8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LARSMorse-Strobe.podspec"; sourceTree = "<group>"; };
-		8E69EDD019D21D6400B81D3D /* LARSMorse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSMorse.h; sourceTree = "<group>"; };
-		8E69EDD119D21D6400B81D3D /* LARSMorse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSMorse.m; sourceTree = "<group>"; };
-		8E69EDD219D21D6400B81D3D /* LARSStrobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSStrobe.h; sourceTree = "<group>"; };
-		8E69EDD319D21D6400B81D3D /* LARSStrobe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSStrobe.m; sourceTree = "<group>"; };
-		8E69EDD419D21D6400B81D3D /* MorseDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MorseDict.plist; sourceTree = "<group>"; };
-		8E69EDD519D21D6400B81D3D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8EEE29A61EC7B8B800BD4C04 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EEE29A71EC7B8B800BD4C04 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EEE29A91EC7B8B800BD4C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -124,7 +112,6 @@
 				8EEE29BD1EC7B8D500BD4C04 /* TransmissionMainViewController.h */,
 				8EEE29BE1EC7B8D500BD4C04 /* TransmissionMainViewController.m */,
 				8EEE29A51EC7B8B800BD4C04 /* transmissions */,
-				8E69EDCE19D21D6400B81D3D /* LARSMorse-Strobe */,
 				8E05E4D919AD233A00CFE7CA /* Frameworks */,
 				8E05E4D819AD233A00CFE7CA /* Products */,
 				8E33BEE319DA0FA70029D3B1 /* assets */,
@@ -171,20 +158,6 @@
 				8E33BEE819DA0FA70029D3B1 /* Orbitron-Regular.ttf */,
 			);
 			path = fonts;
-			sourceTree = "<group>";
-		};
-		8E69EDCE19D21D6400B81D3D /* LARSMorse-Strobe */ = {
-			isa = PBXGroup;
-			children = (
-				8E69EDCF19D21D6400B81D3D /* LARSMorse-Strobe.podspec */,
-				8E69EDD019D21D6400B81D3D /* LARSMorse.h */,
-				8E69EDD119D21D6400B81D3D /* LARSMorse.m */,
-				8E69EDD219D21D6400B81D3D /* LARSStrobe.h */,
-				8E69EDD319D21D6400B81D3D /* LARSStrobe.m */,
-				8E69EDD419D21D6400B81D3D /* MorseDict.plist */,
-				8E69EDD519D21D6400B81D3D /* README.md */,
-			);
-			path = "LARSMorse-Strobe";
 			sourceTree = "<group>";
 		};
 		8EEE29A51EC7B8B800BD4C04 /* transmissions */ = {
@@ -310,7 +283,6 @@
 				8EF550BA19DB263800D820BF /* AppIcon@2x.png in Resources */,
 				8EF550BB19DB263800D820BF /* AppIcon@3x.png in Resources */,
 				8EEE29B61EC7B8B800BD4C04 /* InfoPlist.strings in Resources */,
-				8E69EDD619D21D6400B81D3D /* LARSMorse-Strobe.podspec in Resources */,
 				8E33BEEB19DA0FA70029D3B1 /* Orbitron-Bold.ttf in Resources */,
 				8E33BEEA19DA0FA70029D3B1 /* Orbitron-Black.ttf in Resources */,
 				8EEE29BC1EC7B8B800BD4C04 /* transmissions-Info.plist in Resources */,
@@ -320,7 +292,6 @@
 				8EF550BC19DB263800D820BF /* AppStoreAppIcon.png in Resources */,
 				8E33BEED19DA0FA70029D3B1 /* Orbitron-Regular.ttf in Resources */,
 				8EF550B819DB263800D820BF /* AppIcon-iPad@1x.png in Resources */,
-				8E69EDD919D21D6400B81D3D /* MorseDict.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +313,6 @@
 				8EEE29B81EC7B8B800BD4C04 /* main.m in Sources */,
 				8EEE29B51EC7B8B800BD4C04 /* AppDelegate.m in Sources */,
 				8EEE29BA1EC7B8B800BD4C04 /* TMConstants.m in Sources */,
-				8E69EDD819D21D6400B81D3D /* LARSStrobe.m in Sources */,
-				8E69EDDA19D21D6400B81D3D /* README.md in Sources */,
-				8E69EDD719D21D6400B81D3D /* LARSMorse.m in Sources */,
 				8EEE29BB1EC7B8B800BD4C04 /* TMOscillator.m in Sources */,
 				8EEE29B91EC7B8B800BD4C04 /* TMAboutViewController.m in Sources */,
 			);

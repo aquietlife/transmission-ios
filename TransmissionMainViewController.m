@@ -12,7 +12,7 @@
 #import "TransmissionMainViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <QuartzCore/QuartzCore.h>
-#import "LARSStrobe.h"
+//#import "LARSStrobe.h"
 
 #define A_FREQUENCY 440.0
 #define E_FREQUENCY 330.0
