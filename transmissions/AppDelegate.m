@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
 
@@ -22,6 +24,7 @@
     [_navigationController setNavigationBarHidden:YES];
     //[self.window addSubview:_navigationController.view];
     [self.window makeKeyAndVisible];
+        [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
 
